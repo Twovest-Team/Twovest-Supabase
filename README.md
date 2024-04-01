@@ -17,7 +17,14 @@ To set up Twovest-Supabase on your local machine, follow these steps:
 9. **Start Supabase**: Run the command `supabase start`. Please note that the initial startup may take some time.
 10. **Access Supabase Studio**: Once Supabase is up and running, you can access Supabase Studio by navigating to [http://127.0.0.1:54323](http://127.0.0.1:54323) in your web browser.
 11. **Verification**: Verify that all necessary tables and default dummy data are present in Supabase Studio.
-12. **Link to hosted Supabase**: On the terminal, run `supabase link --project-ref ********************` to link to the remote development Supabase project (Ask Vasco the password).
+12. **Connect Supabase Account**: Run `supabase login` to Login in the Supabase CLI.
+13. **Link to hosted Supabase**: On the terminal, run `supabase link --project-ref ********************` to link to the remote development Supabase project (Ask Vasco the password).
+
+## Useful CLI commands
+1. `supabase start` to innitialize a local instance of the database.
+2. `supabase reset` to restart the local database.
+3. `supabase db diff --use-migra -f <filename>` to save the latest database changes in a migration file.
+4. `supabase migration new <filename>` to create an empty migration sql file.
 
 ## License
 This project is licensed under the MIT License. For details, see the [LICENSE](LICENSE) file.
