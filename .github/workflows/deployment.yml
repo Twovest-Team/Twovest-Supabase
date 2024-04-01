@@ -20,16 +20,16 @@ jobs:
       
     steps:
       - name: Checkout Repository
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Setup Supabase CLI
-      - uses: supabase/setup-cli@v1
+        uses: supabase/setup-cli@v1
         with:
           version: latest
 
       - name: Link Supabase Project
-      - run: supabase link --project-ref $SUPABASE_PROJECT_ID
+        run: supabase link --project-ref $SUPABASE_PROJECT_ID
         if: success()
 
       - name: Push Database Changes 🎉
-      - run: supabase db push
+        run: supabase db push
