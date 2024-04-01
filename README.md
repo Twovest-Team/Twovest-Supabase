@@ -17,6 +17,7 @@ To set up Twovest-Supabase on your local machine, follow these steps:
 9. **Start Supabase**: Run the command `supabase start`. Please note that the initial startup may take some time.
 10. **Access Supabase Studio**: Once Supabase is up and running, you can access Supabase Studio by navigating to [http://127.0.0.1:54323](http://127.0.0.1:54323) in your web browser.
 11. **Verification**: Verify that all necessary tables and default dummy data are present in Supabase Studio.
+12. **Link to hosted Supabase**: On the terminal, run `supabase link --project-ref ********************` to link to the remote, development Supabase project (Ask Vasco the password).
 
 ## License
 This project is licensed under the MIT License. For details, see the [LICENSE](LICENSE) file.
