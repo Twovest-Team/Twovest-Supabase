@@ -24,9 +24,10 @@ To set up Twovest-Supabase on your local machine, follow these steps:
 1. `supabase start` to innitialize a local instance of the database.
 2. `supabase stop` to stop the docker containers.
 3. `supabase reset` to restart the local database.
-4. `supabase db diff --use-migra -f <filename>` to save the latest database changes in a migration file.
-5. `supabase db diff --use-migra -f storage --schema storage` to save the latest changes in the storage policies and schema.
-6. `supabase migration new <filename>` to create an empty migration sql file.
+4. `supabase db pull` to have the latest changes from the remote database.
+5. `supabase db diff --use-migra -f <filename>` to save the latest database changes in a migration file.
+6. `supabase db diff --use-migra -f storage --schema storage` to save the latest changes in the storage policies and schema.
+7. `supabase migration new <filename>` to create an empty migration sql file.
 
 ## License
 This project is licensed under the MIT License. For details, see the [LICENSE](LICENSE) file.
