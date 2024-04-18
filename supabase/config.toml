@@ -91,8 +91,8 @@ enable_manual_linking = false
 # `twitter`, `slack`, `spotify`, `workos`, `zoom`.
 [auth.external.google]
 enabled = true
-client_id = "env(SUPABASE_AUTH_GOOGLE_CLIENT_ID)"
-secret="env(SUPABASE_AUTH_GOOGLE_SECRET)"
+client_id ="env(GOTRUE_EXTERNAL_GOOGLE_CLIENT_ID)"
+secret="env(GOTRUE_EXTERNAL_GOOGLE_SECRET)"
 # Overrides the default auth redirectUrl.
 redirect_uri = ""
 # Overrides the default auth provider URL. Used to support self-hosted gitlab, single-tenant Azure,
