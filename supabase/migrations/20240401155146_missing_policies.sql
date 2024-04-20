@@ -23,7 +23,7 @@ using (true);
 
 
 create policy "Enable read access for all users"
-on "public"."images"
+on "public"."products_has_images"
 as permissive
 for select
 to public
@@ -80,14 +80,6 @@ using (true);
 
 create policy "Enable read access for all users"
 on "public"."sizes"
-as permissive
-for select
-to public
-using (true);
-
-
-create policy "Enable read access for all users"
-on "public"."testing-table"
 as permissive
 for select
 to public
