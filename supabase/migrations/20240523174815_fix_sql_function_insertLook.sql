@@ -1,4 +1,8 @@
-drop function if exists "public"."insert_look_and_relations"(id_user integer, gender integer, url_image text, id_products integer[], id_offers integer[], id_styles integer[], id_offer integer[]);
+alter table "public"."looks_has_products" add column "id_offer" bigint;
+
+alter table "public"."looks_has_products" add constraint "public_looks_has_products_id_offer_fkey" FOREIGN KEY (id_offer) REFERENCES offers(id) ON UPDATE CASCADE ON DELETE CASCADE not valid;
+
+alter table "public"."looks_has_products" validate constraint "public_looks_has_products_id_offer_fkey";
 
 drop function if exists "public"."insert_look_and_relations"(id_user integer, gender integer, url_image text, id_products integer[], id_offers integer[], id_styles integer[]);
 
@@ -28,9 +32,5 @@ BEGIN
         VALUES (new_look_id, id_styles[i]);
     END LOOP;
 
-    -- Commit 
-    COMMIT;
 END;$function$
 ;
-
-
