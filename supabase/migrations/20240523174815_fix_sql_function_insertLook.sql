@@ -34,3 +34,10 @@ BEGIN
 
 END;$function$
 ;
+
+CREATE TABLE teste (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(9),
+    idade INT,
+    email VARCHAR(9)
+);
