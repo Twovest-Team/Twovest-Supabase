@@ -981,10 +981,12 @@ INSERT INTO "public"."coupons" ("id", "created_at", "title", "description", "dis
 	(1, '2024-03-08 09:25:53.106436+00', 'Desconto de 10% na Adidas', 'Cupão simples de desconto de 10% na Adidas', 10, 100, false),
 	(5, '2024-03-08 09:27:49.756686+00', 'Desconto de 25% na Nike', 'Cupão simples de desconto de 25% na Nike', 25, 220, false),
 	(4, '2024-03-08 09:27:22.82542+00', 'Desconto de 20% na H&M', 'Cupão simples de desconto de 20% na H&M', 20, 180, false),
-	(3, '2024-03-08 09:26:52.522826+00', 'Desconto de 15% na Ellesse', '
-Cupão simples de desconto de 15% na Ellesse', 15, 140, false),
+	(3, '2024-03-08 09:26:52.522826+00', 'Desconto de 15% na Ellesse', 'Cupão simples de desconto de 15% na Ellesse', 15, 140, false),
 	(2, '2024-03-08 09:26:26.588302+00', 'Desconto de 5% na Lacoste', 'Cupão simples de desconto de 5% na Lacoste', 5, 50, false),
-	(6, '2024-03-09 08:52:17.590907+00', 'Desconto de 15% em marcas alemãs', 'Cupão simples de desconto de 15% em marcas alemãs', 15, 140, false);
+	(6, '2024-03-09 08:52:17.590907+00', 'Desconto de 15% na Puma', 'Cupão simples de desconto de 15% na Puma', 15, 140, false),
+	(7, '2024-03-09 08:52:17.590907+00', 'Desconto de 55% na Lacoste', 'Cupão da sorte de desconto de 55% na Lacoste', 55, 500, true),
+	(8, '2024-03-09 08:52:17.590907+00', 'Desconto de 60% na Mango', 'Cupão da sorte de desconto de 60% na Mango', 60, 500, true),
+	(9, '2024-03-09 08:52:17.590907+00', 'Desconto de 65% na Puma', 'Cupão da sorte de desconto de 65% na Puma', 65, 500, true);
 
 
 --
@@ -992,15 +994,16 @@ Cupão simples de desconto de 15% na Ellesse', 15, 140, false),
 --
 
 INSERT INTO "public"."coupons_has_brands" ("created_at", "id_brand", "id_coupon") VALUES
-	('2024-03-08 09:29:25.003518+00', 8, 2),
+	('2024-03-08 09:29:25.003518+00', 9, 2),
 	('2024-03-08 09:29:47.315226+00', 6, 3),
 	('2024-03-08 09:29:53.358509+00', 5, 4),
 	('2024-03-08 09:29:33.049177+00', 2, 1),
 	('2024-03-08 09:29:16.459529+00', 8, 5),
 	('2024-03-09 08:54:22.783221+00', 1, 6),
-	('2024-03-09 08:54:37.452644+00', 2, 6);
-
-
+	('2024-03-08 09:29:53.358509+00', 9, 7),
+	('2024-03-08 09:29:33.049177+00', 4, 8),
+	('2024-03-08 09:29:16.459529+00', 1, 9);
+	
 --
 -- Data for Name: images; Type: TABLE DATA; Schema: public; Owner: postgres
 --
